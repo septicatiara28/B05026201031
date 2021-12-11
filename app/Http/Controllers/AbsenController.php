@@ -11,10 +11,13 @@ class AbsenController extends Controller
     {
     	// mengambil data dari table pegawai
     	$absen = DB::table('absen')->get();
+        //$absen = DB::table('absen')
+        //->join('pegawai', 'absen.ID', '=', 'pegawai.pegawai_id')
+        //->select('absen.*', 'pegawai.pegawai_nama')
+        //->paginate(3);
 
     	// mengirim data pegawai ke view index
     	return view('absen.index',['absen' => $absen]);
-
     }
     // method untuk menampilkan view form tambah pegawai
     public function tambah()

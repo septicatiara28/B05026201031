@@ -6,14 +6,18 @@
 <body>
     @extends('layout.ceria')
     @section('isikonten')
-	<h2>www.malasngoding.com</h2>
 	<h3>Data Pegawai</h3>
 
 	<a href="/pegawai/tambah" class="btn btn-danger"> + Tambah Pegawai Baru</a>
 
 	<br/>
 	<br/>
-
+    <div class="container" align='center'>
+    <p>Cari Data Pegawai berdasarkan nama :</p>
+	<form action="/pegawai/cari" method="GET">
+		<input type="text" class="form-control" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
+		<input type="submit" class="form-control btn-success" value="CARI">
+	</form></div><br>
 	<table class="table table-success table-striped">
 		<tr>
 			<th>Nama</th>
@@ -35,8 +39,8 @@
 		</tr>
 		@endforeach
 	</table>
-@endsection
+    {{ $pegawai->links()  }}
 </body>
 </html>
-
+@endsection
 

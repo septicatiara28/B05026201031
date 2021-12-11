@@ -84,15 +84,14 @@
 </head>
 <body class="container">
     <div class="page-header">
-        <p>Septica Tiara Indah Permatasari-5026201031
-        <img src="/filegambar/photo.jpeg" width="70" height="100"></p></p><br>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     </div>
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="http://127.0.0.1:8000/pegawai">Pegawai</a>
-        <a href="http://127.0.0.1:8000/absen">Absen</a>
-        <a href="#">Minggu Depan</a>
-        <a href="#">Praktikum</a>
+
+        <center><img src="/filegambar/photo.jpeg" width="100" height="200"></center></p></p><br>
+        <a href="http://127.0.0.1:8000/pegawai">Pegawai</a><hr>
+        <a href="http://127.0.0.1:8000/absen">Absen</a><hr>
+        <a href="#">Sepatu</a><hr>
       </div>
 
       <div id="main" >
@@ -115,7 +114,7 @@
       <hr>
       <div class="page-footer">
         <p align=center> Hak Cipta Oleh <br>
-        Septica Tiara Indah Permatasari-5026201031<br>
+            ©Septica Tiara Indah Permatasari-5026201031<br>
         </p>
     </div>
 </body>
