@@ -12,7 +12,7 @@
         <style>
         body {
             font-family: "Lato", sans-serif;
-            background-color: bisque;
+            background-color:rgb(175, 175, 248);
           }
 
           .sidebar {
@@ -22,7 +22,7 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: burlywood;
+            background-color: rgb(136, 136, 245);
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
@@ -73,28 +73,28 @@
             .sidebar {padding-top: 15px;}
             .sidebar a {font-size: 18px;}
           }
-          .page-header {
-              text-align: right;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          }
           .page-footer {
               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+          .name {
+              font-family:Verdana, Geneva, Tahoma, sans-serif;
           }
           </style>
 </head>
 <body class="container">
-    <div class="page-header">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    </div>
-    <div id="mySidebar" class="sidebar">
 
-        <center><img src="/filegambar/photo.jpeg" width="100" height="200"></center></p></p><br>
+    <div class="page-header" ></div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <center><img src="/filegambar/foto.png" width="120" height="220"></center></p>
+        <p align="center" class="name"> SEPTICA TIARA INDAH PERMATASARI <br>
+            5026201031</p>
+
         <a href="http://127.0.0.1:8000/pegawai">Pegawai</a><hr>
         <a href="http://127.0.0.1:8000/absen">Absen</a><hr>
-        <a href="#">Sepatu</a><hr>
-      </div>
-
-      <div id="main" >
+        <a href="http://127.0.0.1:8000/sepatu">Sepatu</a><hr>
+    </div>
+    <div id="main" >
         <button class="openbtn" onclick="openNav()">☰ PWEB B</button>
         @section('isikonten')
         @show
@@ -113,8 +113,8 @@
       </script>
       <hr>
       <div class="page-footer">
-        <p align=center> Hak Cipta Oleh <br>
-            ©Septica Tiara Indah Permatasari-5026201031<br>
+        <p align=center> ©Hak Cipta Oleh <br>
+            Septica Tiara Indah Permatasari-5026201031<br>
         </p>
     </div>
 </body>

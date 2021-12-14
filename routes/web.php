@@ -39,6 +39,7 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 Route::get('/pegawai/cari','PegawaiController@cari');
+Route::get('/pegawai/detail/{id}','PegawaiController@view');
 
 //route CRUD ABSEN
 Route::get('/absen','AbsenController@index');
@@ -47,3 +48,15 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+Route::get('/absen/cari','AbsenController@cari');
+Route::get('/absen/detail/{id}','AbsenController@view');
+
+//route CRUD SEPATU
+Route::get('/sepatu','SepatuController@index');
+Route::get('/sepatu/tambah','SepatuController@tambah');
+Route::post('/sepatu/store','SepatuController@store');
+Route::get('/sepatu/edit/{id}','SepatuController@edit');
+Route::post('/sepatu/update','SepatuController@update');
+Route::get('/sepatu/hapus/{id}','SepatuController@hapus');
+Route::get('/sepatu/cari','SepatuController@cari');
+Route::get('/sepatu/detail/{id}','SepatuController@view');

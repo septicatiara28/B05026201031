@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
-    @extends('layout.ceria')
-    @section('isikonten')
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+@extends('layout.ceria')
+
+@section('isikonten')
+
+@section('title', 'TAMBAH DATA PEGAWAI')
+
 	<h3>Data Pegawai</h3>
 
 	<a href="/pegawai" class="btn btn-danger"> Kembali</a>
@@ -16,12 +13,27 @@
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}
-		Nama <input type="text" name="nama" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="umur" required="required"> <br/>
-		Alamat <textarea name="alamat" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data" class="btn btn-primary" >
+
+        <div class="form-group">
+            <label for="jabatan">Nama</label>
+            <input class="form-control" type="text" name="nama"  required="required">
+        </div>
+        <div class="form-group">
+            <label for="jabatan">Jabatan</label>
+            <input class="form-control" type="text" name="jabatan"  required="required">
+        </div>
+        <div class="form-group">
+            <label for="umur">Umur</label>
+            <input class="form-control" type="number" name="umur"  required="required">
+        </div>
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input class="form-control" type="text" name="alamat"  required="required">
+        </div>
+        <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="Simpan Data">
+        </div>
+
 	</form>
 @endsection
-</body>
-</html>
+
