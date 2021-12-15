@@ -14,6 +14,10 @@
 	<form action="/karyawan1/store" method="post">
 		{{ csrf_field() }}
             <div class="form-group">
+                <div class="form-group">
+                    <label for="nip">NIP</label>
+                    <input class="form-control" type="text" name="nip"  required="required">
+                </div>
                 <label for="nama">Nama</label>
                 <input class="form-control" type="text" name="nama"  required="required">
             </div>
