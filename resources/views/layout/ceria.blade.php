@@ -93,6 +93,7 @@
         <a href="http://127.0.0.1:8000/pegawai">Pegawai</a><hr>
         <a href="http://127.0.0.1:8000/absen">Absen</a><hr>
         <a href="http://127.0.0.1:8000/sepatu">Sepatu</a><hr>
+        <a href="http://127.0.0.1:8000/karyawan1">Karyawan1</a><hr>
     </div>
     <div id="main" >
         <button class="openbtn" onclick="openNav()">☰ PWEB B</button>

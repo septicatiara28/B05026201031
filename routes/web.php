@@ -60,3 +60,9 @@ Route::post('/sepatu/update','SepatuController@update');
 Route::get('/sepatu/hapus/{id}','SepatuController@hapus');
 Route::get('/sepatu/cari','SepatuController@cari');
 Route::get('/sepatu/detail/{id}','SepatuController@view');
+
+//route CRUD KARYAWAN1
+Route::get('/karyawan1','Karyawan1Controller@index');
+Route::get('/karyawan1/tambah','Karyawan1Controller@tambah');
+Route::post('/karyawan1/store','Karyawan1Controller@store');
+Route::get('/karyawan1/hapus/{id}','Karyawan1Controller@hapus');
